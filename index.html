@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Smart_Watch</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+    <div class="first_page">
+        <div class="blue_side">
+            <h1>SmartWatch</h1>
+        </div>
+        <div class="watch">
+            <div class="img">
+                <img src="./assets/watch.png">
+            </div>
+            <div class="watch_face"></div>
+            
+            <div class="smallTime" onclick="showHomePage()">
+                <div id="wrapperSmallTime">
+                    <span id="smallhours">00</span>
+                    <span>:</span>
+                    <span id="smallmins">00</span>
+                </div>
+
+            </div>
+            
+            <div class="time" id="currentTime">
+                <div id="wrapper">
+                    <span id="hours">00</span>
+                    <span>:</span>
+                    <span id="mins">00</span>
+                </div>
+            </div>
+                        
+            <div class="icons">
+                <i class='fas fa-comment-dots' onclick="showMessagePage()"></i>
+                <i class='fas fa-music' onclick="showMusicPage()"></i>
+                <i class='far fa-clock' onclick="showTimer()"></i>
+
+            </div>
+            <span id="weatherDay">
+                <div id="days"></div>
+                <img class="weatherIcon" src="" alt="weather icon">
+            </span>
+            
+
+            <div class="timer" id="time">
+                <div id="displayTime">00:00:00</div>
+                <div id="timePause">00:00:00</div>
+                <div class="t_buttons">
+                    <i class='fas fa-redo-alt' onclick="watchReset()"></i>
+                    <i class='fas fa-play' onclick="watchStart()"></i>
+                    <i class='fas fa-stop' onclick="watchStop()"></i>
+                </div>
+            </div>
+
+            <div id="message" >
+                <p>Your order id23#45 will be delivered today</p><hr>
+                <p>AXSNDL</p><hr>
+                <p>Shaik</p>
+            </div>
+
+            <div class="spotify_page" id="music">
+                <iframe class="spotify" src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3"  frameborder="0"></iframe>
+            </div>
+
+            
+        </div>
+
+      
+    </div>
+
+    
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
