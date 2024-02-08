@@ -1,4 +1,4 @@
-
+/* 
 
 * {
     font-family: "Poppins", sans-serif;
@@ -180,4 +180,209 @@ hr{
 
 
 
+ */
+
+ /* Default styles */
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.first_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.blue_side {
+    width: 50%;
+    background-color: rgb(30, 105, 163);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue_side h1 {
+    font-size: 50px;
+}
+
+.watch {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.img {
+    position: relative;
+    top: 50px;
+    max-width: 100%;
+    height: 100%;
+}
+
+.watch_face {
+    display: flex;
+    position: absolute;
+    border-radius: 24.2%;
+    background: black;
+    height: 263.2px;
+    width: 228px;
+    top: 186px;
+}
+
+.icons {
+    position: absolute;
+    bottom: 250px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i.fa-comment-dots,
+.icons i.fa-music, 
+.icons i.fa-clock {
+    position: relative;
+    margin: 1px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.time {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: 50px;
+    top: 260px;
+}
+
+.smallTime {
+    position: absolute;
+    color: white;
+    top: 200px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: 230px;
+    height: 185px;
+}
+
+.spotify_page {
+    display: flex;
+    position: absolute;
+    height: 25vh;
+    overflow: scroll;
+    top: 230px;
+}
+
+.spotify {
+    height: 400px;
+    width: 190px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#message {
+    font-size: 15px;
+    color: black;
+    top: 230px;
+    background-color: white;
+    position: absolute;
+    color: black;
+    height: 185px;
+    width: 200px;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+#displayTime {
+    position: absolute;
+    font-size: 50px;
+}
+
+#timePause {
+    top: 50px;
+    position: absolute;
+    font-size: 30px;
+    color: gray;
+    margin: 0 40px;
+}
+
+.timer .t_buttons i {
+    margin: 69px 25px;
+    color: white;
+    font-size: 20px;
+}
+
+hr {
+    color: rgb(164, 157, 157);
+}
+
+#weatherDay {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 313px;
+}
+
+#days {
+    color: white;
+    font-size: 25px;
+}
+
+.weatherIcon {
+    width: 30px; 
+    height: auto; 
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+
+    .first_page {
+        flex-direction: column;
+    }
+
+    .blue_side {
+        width: 100%;
+    }
+
+    .watch {
+        width: 100%;
+    }
+
+    .time,
+    .smallTime {
+        top: 20%;
+    }
+
+    .timer,
+    .spotify_page,
+    #message {
+        top: 50%;
+    }
+
+    #weatherDay {
+        top: 70%;
+    }
+}
 
