@@ -72,7 +72,7 @@ function watchReset(){
 function showHomePage(){
     document.getElementById('currentTime').style.display='block';
     document.getElementById('weatherDay').style.display='block';
-    document.getElementById('time').style.display = 'none';
+    document.getElementById('times').style.display = 'none';
     document.getElementById('message').style.display='none';
     document.getElementById('music').style.display = 'none';
 }
@@ -81,7 +81,7 @@ function showMessagePage(){
     document.getElementById('message').style.display='block';
     document.getElementById('currentTime').style.display='none';
     document.getElementById('weatherDay').style.display='none';
-    document.getElementById('time').style.display = 'none';
+    document.getElementById('times').style.display = 'none';
     document.getElementById('music').style.display = 'none';
 }
 
@@ -89,13 +89,13 @@ function showMusicPage(){
     document.getElementById('message').style.display='none';
     document.getElementById('currentTime').style.display='none';
     document.getElementById('weatherDay').style.display='none';
-    document.getElementById('time').style.display = 'none';
+    document.getElementById('times').style.display = 'none';
     document.getElementById('music').style.display = 'block';
 
 }
 
 function showTimer() {
-    document.getElementById('time').style.display = 'block';
+    document.getElementById('times').style.display = 'block';
     document.getElementById('currentTime').style.display = 'none';
     document.getElementById('weatherDay').style.display='none';
     document.getElementById('message').style.display='none';
@@ -104,7 +104,7 @@ function showTimer() {
 
 showHomePage();
 
-var city="coimbatore"
+var city="delhi"
 var weatherData;
 async function getWeather(){
     const data= await fetch(`
